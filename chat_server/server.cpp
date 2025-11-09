@@ -40,6 +40,7 @@ void handle_client(int client_socket) {
     }
     buffer[bytes] = '\0';
     std::string username(buffer);
+    std::cout << username;
     username.erase(std::remove(username.begin(), username.end(), '\n'), username.end());
 
     {
